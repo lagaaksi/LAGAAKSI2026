@@ -101,15 +101,16 @@ nav {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: 900;
-    /* Kita buat hurufnya paling tebal (dari 800 ke 900) */
 
-    /* MENGUATKAN BAYANGAN (TEXT SHADOW) */
-    /* Lapis 1: Bayangan tipis di sekeliling huruf */
-    /* Lapis 2 & 3: Bayangan blur gelap yang lebih luas */
+    /* MENGUBAH WARNA TULISAN MENJADI KUNING EMAS TERANG */
+    color: #FFD54F;
+
+    /* Memberikan efek bayangan gelap agar warna kuningnya makin 'menyala' di atas foto */
     text-shadow:
-        2px 2px 4px rgba(0, 0, 0, 0.9),
-        0 0 20px rgba(0, 0, 0, 0.8),
-        0 0 40px rgba(0, 0, 0, 0.9);
+        3px 3px 0px #1e285d,
+        /* Garis tepi (outline) biru gelap khas Laga Aksi */
+        0 0 20px rgba(0, 0, 0, 0.9);
+    /* Bayangan blur di sekitarnya */
 }
 
 .hero-content p {
