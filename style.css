@@ -331,3 +331,89 @@ footer {
 .timeline-item:nth-child(4) {
     animation-delay: 0.8s;
 }
+
+/* --- ABOUT SECTION --- */
+.about-section {
+    background-color: #ffffff;
+    /* Latar putih bersih */
+    padding: 80px 20px 40px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-container h2 {
+    color: #1e285d;
+    font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.about-container p.desc {
+    color: #ff9800;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.about-container p.desc-text {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+/* Tombol Transparan di Hero Area */
+.btn-outline-light {
+    display: inline-block;
+    border: 2px solid #FFD54F;
+    color: #FFD54F;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn-outline-light:hover {
+    background-color: #FFD54F;
+    color: #1e285d;
+}
+
+/* --- CALL TO ACTION (AREA PENDAFTARAN BAWAH) --- */
+.cta-section {
+    background: linear-gradient(135deg, #1e285d, #3b4b8a);
+    /* Background biru elegan */
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.cta-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-container h2 {
+    font-size: 36px;
+    color: #FFD54F;
+    margin-bottom: 15px;
+}
+
+.cta-container p {
+    font-size: 18px;
+    color: #d6def1;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.btn-large {
+    font-size: 22px;
+    /* Tombol dibuat sangat besar dan jelas */
+    padding: 18px 50px;
+}
