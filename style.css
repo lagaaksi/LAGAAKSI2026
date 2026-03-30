@@ -15,17 +15,22 @@ body {
 
 /* --- NAVIGASI (NAVBAR) --- */
 .navbar {
-    position: fixed; /* Membuatnya tetap di atas saat di-scroll */
+    position: fixed;
+    /* Membuatnya tetap di atas saat di-scroll */
     top: 0;
     width: 100%;
     padding: 20px 50px;
     display: flex;
-    justify-content: space-between; /* Membagi kiri, tengah, kanan */
+    justify-content: space-between;
+    /* Membagi kiri, tengah, kanan */
     align-items: center;
     box-sizing: border-box;
-    z-index: 1000; /* Memastikan menu selalu berada di lapisan paling atas */
-    background: rgba(15, 23, 42, 0.85); /* Warna latar semi-transparan elegan */
-    backdrop-filter: blur(10px); /* Efek blur modern seperti kaca */
+    z-index: 1000;
+    /* Memastikan menu selalu berada di lapisan paling atas */
+    background: rgba(15, 23, 42, 0.85);
+    /* Warna latar semi-transparan elegan */
+    backdrop-filter: blur(10px);
+    /* Efek blur modern seperti kaca */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -34,7 +39,8 @@ body {
     color: white;
     font-size: 22px;
     font-weight: 700;
-    flex: 1; /* Membagi ruang secara adil */
+    flex: 1;
+    /* Membagi ruang secara adil */
 }
 
 /* Bagian Tengah (Menu) */
@@ -45,7 +51,8 @@ body {
     margin: 0;
     padding: 0;
     flex: 2;
-    justify-content: center; /* Memosisikan menu persis di tengah */
+    justify-content: center;
+    /* Memosisikan menu persis di tengah */
 }
 
 .nav-menu li a {
@@ -64,7 +71,8 @@ body {
 /* Bagian Kanan (Tombol) */
 .btn-nav-login {
     display: inline-block;
-    border: 1.5px solid #FFD54F; /* Garis tepi kuning emas */
+    border: 1.5px solid #FFD54F;
+    /* Garis tepi kuning emas */
     color: white;
     padding: 8px 25px;
     border-radius: 50px;
@@ -72,12 +80,14 @@ body {
     font-weight: 600;
     font-size: 15px;
     transition: all 0.3s ease;
-    margin-left: auto; /* Mendorong tombol mentok ke kanan */
+    margin-left: auto;
+    /* Mendorong tombol mentok ke kanan */
 }
 
 .btn-nav-login:hover {
     background-color: #FFD54F;
-    color: #1e285d; /* Teks berubah gelap saat disentuh */
+    color: #1e285d;
+    /* Teks berubah gelap saat disentuh */
 }
 
 /* --- HERO SECTION (LAYAR UTAMA) --- */
@@ -458,18 +468,36 @@ footer {
     color: #94a3b8;
 }
 
-/* Desain Kartu Instagram */
+/* Container untuk membungkus 2 kartu agar bersebelahan */
+.ig-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    flex-wrap: wrap;
+    /* Agar otomatis susun bawah jika dibuka di HP */
+}
+
+/* Update desain kartu agar menyesuaikan ukuran sebelahnya */
 .ig-card {
     background-color: #1e293b;
-    /* Warna latar kartu */
+    flex: 1;
+    /* Membagi ruang sama rata untuk kedua kartu */
+    min-width: 300px;
+    /* Lebar minimum agar tidak gepeng di layar kecil */
     max-width: 400px;
-    margin: 0 auto 50px auto;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
     border: 1px solid #334155;
     transition: transform 0.3s ease;
+    box-sizing: border-box;
+    text-align: left;
+    /* Teks rata kiri */
 }
+
+/* Sisa kode seperti .ig-card:hover, .ig-header, dll biarkan SAMA seperti sebelumnya */
 
 .ig-card:hover {
     transform: translateY(-10px);
@@ -629,4 +657,119 @@ footer {
     background-color: #128C7E;
     box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
     color: white;
+}
+
+/* --- KARTU LEBAR UNTUK SYARAT ADMINISTRASI --- */
+.card-wide {
+    background: white;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-bottom: 5px solid #ff9800;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+}
+
+.card-wide:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-wide h3 {
+    color: #1e285d;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+/* Desain Daftar Angka (List) */
+.terms-list {
+    color: #64748b;
+    line-height: 1.8;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.terms-list li {
+    margin-bottom: 12px;
+}
+
+/* Desain Penanda Warna Map */
+.map-putra {
+    display: inline-block;
+    background-color: #e0f2fe;
+    /* Biru muda */
+    color: #0369a1;
+    /* Teks biru tua */
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.map-putri {
+    display: inline-block;
+    background-color: #ffe4e6;
+    /* Merah muda */
+    color: #be123c;
+    /* Teks merah tua */
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+/* ========================================= */
+/* ✨ EFEK ANIMASI TAMBAHAN ✨ */
+/* ========================================= */
+
+/* 1. Smooth Scrolling untuk seluruh halaman */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 2. Animasi Muncul Perlahan (Fade In Up) untuk layar utama */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content {
+    animation: fadeInUp 1.2s ease-out forwards;
+}
+
+/* 3. Animasi Mengambang (Floating) untuk Badge MAN 2 */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+.badge {
+    display: inline-block; /* Wajib ditambahkan agar bisa bergerak */
+    animation: float 3s ease-in-out infinite;
+}
+
+/* 4. Animasi Denyut Cahaya (Pulse Glow) untuk Tombol Daftar */
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 213, 79, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(255, 213, 79, 0); /* Cahaya membesar dan memudar */
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 213, 79, 0);
+    }
+}
+
+.btn-large {
+    animation: pulseGlow 2s infinite; /* Berdenyut terus menerus setiap 2 detik */
 }
